@@ -7,10 +7,13 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    max-width: 100vw;
+}
+
 body{
     background-color: #716154;
     overflow-x: hidden;
-    max-width: 100vw;
 }
 /* NAVBAR */
 .navbar{
