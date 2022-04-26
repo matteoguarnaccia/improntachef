@@ -9,6 +9,10 @@
 
 body{
     background-color: #716154;
+}
+
+.wrapper{
+    position: relative;
     overflow-x: hidden;
 }
 /* NAVBAR */
