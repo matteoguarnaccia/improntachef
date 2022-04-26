@@ -135,3 +135,18 @@ ul.dropdown {
     transform: translateX(0px);
 }
 /*END NAVBAR*/
+
+/*SECTION-1*/
+.section-1{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-1-bg.jpg") center center;
+}
+
+.section-1 h1{
+    font-size: 70px;
+    letter-spacing: 6px;
+    color: #d5a176;
+}
