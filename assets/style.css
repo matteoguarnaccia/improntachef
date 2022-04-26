@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #716154;
+    overflow-x: hidden;
+}
+/* NAVBAR */
+.navbar{
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #52473e ;
+    z-index: 1;
+    transition: 0.5s ease-out;
+    transform: translateX(250px);
+}
+
+
+ul{
+    width: 100%;
+    list-style: none;
+    padding: 40px 0px;
+}
+
+ul li{
+    text-align: center;
+    display: block;
+    width: 100%
+}
+
+ul li a{
+    color: #fff;
+    padding: 15px 0;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+ul li:hover a{
+    color: #fff;
+    letter-spacing: 1.5px
+}
+
+input{
+    -webkit-appearance: none;
+    visibility: hidden;
+    display: none;
+}
+
+#toggle{
+    z-index: 2;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#toggle::before{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.2s;
+    transform: translateY(-10px);
+    box-shadow: 0 10px 0 rgba(255, 255, 255, 0.5);
+}
+#toggle:hover::before{
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 10px 0 rgba(255, 255, 255, 1);
+}
+
+#toggle.active::before{
+    transform: translateY(0px) rotate(45deg);
+    box-shadow: 0 0 0 #fff;
+}
+
+#toggle::after{
+    content: '';
+    position: absolute;
+    width: 28px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    transform: translateY(10px);
+}
+#toggle:hover::after{
+    background: rgba(255, 255, 255, 1);
+}
+
+#toggle.active::after{
+    transform: translateY(0px) rotate(-45deg);
+}
+
+#navtoggle:checked ~ .navbar {
+    transform: translateX(0px);
+}
+/*END NAVBAR*/
