@@ -62,6 +62,11 @@ ul.dropdown {
     transition: 0.3s;
 }
 
+#dd-parent a{
+    color: #fff;
+    cursor: pointer;
+}
+
 #dd-parent a span{
     position: absolute;
     margin-left: 30px;
