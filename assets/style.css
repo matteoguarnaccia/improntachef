@@ -44,21 +44,40 @@ ul li a{
     display: block;
     letter-spacing: 1px;
     text-transform: uppercase;
-    position: relative;
     transition: 0.3s;
     overflow: hidden;
     white-space: nowrap;
 }
 
-ul li:hover a{
+ul li a:hover{
     color: #fff;
     letter-spacing: 1.5px
 }
 
-input{
-    -webkit-appearance: none;
-    visibility: hidden;
-    display: none;
+ul.dropdown {
+    font-size: 12px;
+    padding: 0;
+    height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#dd-parent a span{
+    position: absolute;
+    margin-left: 30px;
+}
+
+#dd-parent a span i{
+    font-size: 10px;
+    transition: 0.3s;
+}
+
+#dd-parent.active ul.dropdown {
+    height: 100px;
+}
+
+#dd-parent.active a span i{
+    transform: rotate(180deg);
 }
 
 #toggle{
@@ -112,7 +131,7 @@ input{
     transform: translateY(0px) rotate(-45deg);
 }
 
-#navtoggle:checked ~ .navbar {
+#toggle.active ~ .navbar {
     transform: translateX(0px);
 }
 /*END NAVBAR*/
