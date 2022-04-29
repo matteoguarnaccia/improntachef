@@ -12,6 +12,16 @@ body{
     color: #fff;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s;
+}
+a:hover{
+    color: #fff;
+    letter-spacing: 1.5px
+}
+
 h2{
     letter-spacing: 1px;
     margin-bottom: 40px;
@@ -34,7 +44,7 @@ p{
     right: 0;
     top: 0;
     background: #52473e ;
-    z-index: 1;
+    z-index: 999;
     transition: 0.5s ease-out;
     transform: translateX(250px);
 }
@@ -62,11 +72,6 @@ ul li a{
     transition: 0.3s;
     overflow: hidden;
     white-space: nowrap;
-}
-
-ul li a:hover{
-    color: #fff;
-    letter-spacing: 1.5px
 }
 
 ul.dropdown {
@@ -101,7 +106,7 @@ ul.dropdown {
 }
 
 #toggle{
-    z-index: 2;
+    z-index: 9999;
     position: fixed;
     top: 20px;
     right: 20px;
@@ -184,6 +189,7 @@ ul.dropdown {
 
 /*SECTION-2*/
 .section-2{
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,8 +203,8 @@ ul.dropdown {
 /*SECTION-3*/
 .section-3{
     position: relative;
-    height: 100vh;
     background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-3-bg.jpg") center center;
+    overflow: hidden;
 }
 
 .section-3::before{
@@ -210,4 +216,14 @@ ul.dropdown {
     height: 15%;
     background: linear-gradient(to bottom, #716154, transparent);
 }
+
+.section-3 h2{
+    z-index: 6;
+}
+
+.section-3 img{
+    margin: 0 auto;
+}
+
+
 
