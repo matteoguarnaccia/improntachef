@@ -49,6 +49,10 @@ p{
     transform: translateX(250px);
 }
 
+.home-logo{
+    position: absolute;
+    top: 0;
+}
 
 ul{
     width: 100%;
@@ -169,6 +173,7 @@ ul.dropdown {
     justify-content: center;
     align-items: center;
     background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-1-bg.jpg") center center;
+    opacity: 0;
 }
 .section-1::after{
     content: '';
@@ -184,6 +189,11 @@ ul.dropdown {
     font-size: 10vw;
     letter-spacing: 6px;
     color: #d5a176;
+}
+
+.section-1 img{
+    max-height: 120vh;
+    opacity: 0;
 }
 /*END SECTION-1*/
 
@@ -216,14 +226,20 @@ ul.dropdown {
     height: 15%;
     background: linear-gradient(to bottom, #716154, transparent);
 }
+/*END SECTION-3*/
 
-.section-3 h2{
-    z-index: 6;
+/*SECTION-4*/
+.section-4{
+    overflow: hidden;
 }
 
-.section-3 img{
-    margin: 0 auto;
+.section-4 i{
+    font-size: 100px;
+    margin-bottom: 20px;
+    transition: 0.3s;
 }
-
-
+.section-4 a:hover i{
+    transform: translateY(-10px);
+}
+/*END SECTION-4*/
 
