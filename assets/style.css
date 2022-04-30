@@ -181,7 +181,7 @@ ul.dropdown {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 15%;
+    height: 100px;
     background: linear-gradient(to top, #716154, transparent);
 }
 
@@ -212,25 +212,39 @@ ul.dropdown {
 
 /*SECTION-3*/
 .section-3{
+    min-height: 100vh;
     position: relative;
     background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-3-bg.jpg") center center;
     overflow: hidden;
 }
 
 .section-3::before{
+    pointer-events: none;
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
-    height: 15%;
+    height: 100px;
     background: linear-gradient(to bottom, #716154, transparent);
+}
+
+.section-3::after{
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #716154, transparent);
 }
 /*END SECTION-3*/
 
 /*SECTION-4*/
 .section-4{
     overflow: hidden;
+    min-height: 600px;
 }
 
 .section-4 i{
@@ -243,3 +257,42 @@ ul.dropdown {
 }
 /*END SECTION-4*/
 
+/*SECTION-5*/
+.section-5{
+    min-height: 100vh;
+    position: relative;
+    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-5-bg.jpg") center center;
+    overflow: hidden;
+}
+
+.section-5::before{
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, #716154, transparent);
+}
+
+.section-5::after{
+    pointer-events: none;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #716154, transparent);
+}
+
+.section-5 .logo{
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: 0.3s;
+}
+.section-5 .logo:hover{
+    filter: grayscale(0%);
+}
+/*END SECTION-5*/

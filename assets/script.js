@@ -85,3 +85,19 @@ let scene4 = new ScrollMagic.Scene({
 })
   .setTween(timeline4)
   .addTo(controller);
+
+//section 5
+
+let timeline5 = new TimelineMax();
+
+timeline4
+  .fromTo(".clienti", { y: 50 }, { y: -50, duration: 3 })
+  .fromTo(".clienti", { opacity: 0 }, { opacity: 1, duration: 1.5 }, "<");
+
+let scene5 = new ScrollMagic.Scene({
+  triggerElement: ".section-4",
+  duration: "150%",
+  triggerHook: 0.8,
+})
+  .setTween(timeline5)
+  .addTo(controller);
