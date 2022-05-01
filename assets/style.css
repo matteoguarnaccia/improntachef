@@ -215,7 +215,6 @@ ul.dropdown {
     min-height: 100vh;
     position: relative;
     background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-3-bg.jpg") center center;
-    overflow: hidden;
 }
 
 .section-3::before{
