@@ -26,7 +26,7 @@ gsap.to(
   "2"
 );
 
-timeline1.to(".section-1 img", { y: -160, ease: "none" });
+timeline1.to(".section-1 img", { y: -80, ease: "none" });
 
 let scene1 = new ScrollMagic.Scene({
   triggerElement: ".section-1",
