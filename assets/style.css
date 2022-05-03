@@ -329,6 +329,9 @@ footer .links span{
 footer .links li{
     margin: 5px;
 }
+footer .links li a{
+    white-space: nowrap;
+}
 footer .links li a:hover{
     color: #d5a176;
 }
