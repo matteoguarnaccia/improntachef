@@ -12,6 +12,10 @@ body{
     color: #fff;
 }
 
+ul{
+    list-style: none;
+}
+
 a{
     text-decoration: none;
     color: #fff;
@@ -19,7 +23,6 @@ a{
 }
 a:hover{
     color: #fff;
-    letter-spacing: 1.5px
 }
 
 h2{
@@ -49,33 +52,34 @@ p{
     transform: translateX(250px);
 }
 
-.home-logo{
-    position: absolute;
-    top: 0;
-}
-
-ul{
+.navbar ul{
     width: 100%;
-    list-style: none;
     padding: 40px 0px;
 }
 
-ul li{
+.navbar ul li{
     text-align: center;
     display: block;
     width: 100%
 }
 
-ul li a{
-    color: #fff;
+.navbar ul li a{
     padding: 15px 0;
-    text-decoration: none;
     display: block;
     letter-spacing: 1px;
     text-transform: uppercase;
     transition: 0.3s;
     overflow: hidden;
     white-space: nowrap;
+}
+
+.navbar ul li a:hover{
+    letter-spacing: 1.5px;
+}
+
+.home-logo{
+    position: absolute;
+    top: 0;
 }
 
 ul.dropdown {
@@ -275,17 +279,6 @@ ul.dropdown {
     background: linear-gradient(to bottom, #716154, transparent);
 }
 
-.section-5::after{
-    pointer-events: none;
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    background: linear-gradient(to top, #716154, transparent);
-}
-
 .section-5 .logo{
     cursor: pointer;
     filter: grayscale(100%);
@@ -295,3 +288,54 @@ ul.dropdown {
     filter: grayscale(0%);
 }
 /*END SECTION-5*/
+
+/*FOOTER*/
+footer .info img{
+    max-width: 100px;
+}
+footer .info .social{
+    font-size: 18px;
+}
+footer .info .social a{
+    margin: 0 10px;
+}
+footer .info .social a:hover{
+    letter-spacing: normal;
+    color: #d5a176;
+}
+footer .contacts a{
+    margin: 0 20px;
+    font-size: 20px;
+    white-space: nowrap;
+}
+footer .contacts a i{
+    color: #d5a176;
+}
+footer .contacts a span{
+    font-size: medium;
+}
+
+footer .contacts a:hover{
+    letter-spacing: normal;
+    color: #d5a176;
+}
+footer .footer-1{
+    border-bottom: 2px solid #d5a176;
+}
+footer .links span{
+    color: #d5a176;
+    text-transform: uppercase;
+}
+footer .links li{
+    margin: 5px;
+}
+footer .links li a:hover{
+    color: #d5a176;
+}
+footer .links li a i{
+    color: #d5a176;
+}
+footer .p-iva span{
+    margin: 5px 0;
+    white-space: nowrap
+}

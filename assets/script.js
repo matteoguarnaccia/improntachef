@@ -86,11 +86,11 @@ let scene4 = new ScrollMagic.Scene({
 
 let timeline5 = new TimelineMax();
 
-timeline5.fromTo(".clienti", { y: 40 }, { y: -40, duration: 3, ease: "none" });
+timeline5.fromTo(".clienti", { y: 80 }, { y: -80, duration: 3, ease: "none" });
 
 let scene5 = new ScrollMagic.Scene({
   triggerElement: ".section-5",
-  duration: "100%",
+  duration: "200%",
   triggerHook: 0.8,
 })
   .setTween(timeline5)
