@@ -109,7 +109,7 @@ ul.dropdown {
     height: 100px;
 }
 
-#dd-parent.active a span i{
+#dd-parent.active a span{
     transform: rotate(180deg);
 }
 
@@ -257,6 +257,7 @@ ul.dropdown {
 }
 .section-4 a:hover i{
     transform: translateY(-10px);
+    color: #d5a176;
 }
 /*END SECTION-4*/
 
@@ -328,9 +329,6 @@ footer .links span{
 }
 footer .links li{
     margin: 5px;
-}
-footer .links li a{
-    white-space: nowrap;
 }
 footer .links li a:hover{
     color: #d5a176;
