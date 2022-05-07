@@ -355,14 +355,45 @@ footer .p-iva span{
 
 
 /*====== PAGINA GABRIEL E VALERIA ======*/
-.gabri{
-    min-height: 100vh;
-    background: linear-gradient(#716154, #716154a9 ), url("./images/gabri-bg.jpg") center center;
+.about-us {
+    height: 100vh;
+    background: linear-gradient(#7161545f, #716154c5 ), url("./images/valegabri-bg1.jpg") center center no-repeat;
+    background-size: cover;
+    opacity: 0;
 }
 
-.vale{
-    min-height: 100vh;
-    background: linear-gradient(#716154a9, #716154), url("./images/vale-bg.jpg") center center;
+.gabriel-valeria{
+    z-index: 2;
+}
+
+.follow-us{
+    margin-top: 150px;
+}
+.follow-us a i{
+    font-size: 40px;
+    margin: 0 10px
+}
+.follow-us a:hover{
+    color:#d5a176
+}
+
+.parallax {
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+}
+.parallax.px1 {
+    background:linear-gradient(#7161545f, #716154c5  ), url("./images/px1-bg.jpg") center center;
+
+}
+.parallax.px2 {
+    background:linear-gradient(#7161545f, #716154c5  ), url("./images/px2-bg.jpg") center center;
+}
+.parallax.px3 {
+    background:linear-gradient(#7161545f, #716154c5  ), url("./images/px3-bg.jpg") center center;
 }
 
 @media screen and (max-width: 768px){
