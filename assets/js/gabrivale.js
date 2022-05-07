@@ -11,7 +11,7 @@ if (window.innerWidth > 768) {
 }
 
 timeline1
-  .to(".gabriel-valeria", { y: "-80%", ease: "none", duration: 4 }, "<")
+  .to(".gabriel-valeria", { y: "-90%", ease: "none", duration: 4 }, "<")
   .to(".parallax.px1", { opacity: 1, duration: 0.5 }, "0.5")
   .to(".parallax.px2", { opacity: 1, duration: 0.5 }, "2")
   .to(".parallax.px3", { opacity: 1, duration: 0.5 }, "3");
