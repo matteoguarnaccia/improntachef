@@ -1,16 +1,3 @@
-// navbar
-const toggle = document.getElementById("toggle");
-const ddParent = document.getElementById("dd-parent");
-
-toggle.onclick = () => {
-  toggle.classList.toggle("active");
-};
-
-ddParent.onclick = () => {
-  ddParent.classList.toggle("active");
-};
-
-//Animate on scroll
 //Section 1
 let controller = new ScrollMagic.Controller();
 let timeline1 = new TimelineMax();

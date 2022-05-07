@@ -329,6 +329,7 @@ footer .links span{
 }
 footer .links li{
     margin: 5px;
+    white-space: nowrap;
 }
 footer .links li a:hover{
     color: #d5a176;
@@ -339,4 +340,37 @@ footer .links li a i{
 footer .p-iva span{
     margin: 5px 0;
     white-space: nowrap
+}
+
+@media screen and (max-width: 768px){
+    footer .info {
+        order: -1;
+    }
+    footer .p-iva {
+        font-size: 14px;
+        margin: 5px 0px !important;
+    }
+}
+/*END FOOTER*/
+
+
+/*====== PAGINA GABRIEL E VALERIA ======*/
+.gabri{
+    min-height: 100vh;
+    background: linear-gradient(#716154, #716154a9 ), url("./images/gabri-bg.jpg") center center;
+}
+
+.vale{
+    min-height: 100vh;
+    background: linear-gradient(#716154a9, #716154), url("./images/vale-bg.jpg") center center;
+}
+
+@media screen and (max-width: 768px){
+    .vale, .gabri {
+        text-align: center;
+    }
+
+    .vale .descrizione{
+        order: 2;
+    }
 }
