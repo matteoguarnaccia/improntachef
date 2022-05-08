@@ -7,11 +7,6 @@ gsap.to(
   { ease: Power1.easeIn, opacity: 1, duration: 1.5 },
   "0.5"
 );
-gsap.to(
-  ".section-1 img",
-  { ease: Power1.easeIn, opacity: 1, duration: 1.5 },
-  "2"
-);
 
 timeline1.to(".section-1 img", { y: -80, ease: "none" });
 
