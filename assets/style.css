@@ -359,10 +359,12 @@ footer .p-iva span{
     background: linear-gradient(#7161545f, #716154c5 ), url("./images/valegabri-bg1.jpg") center center no-repeat;
     background-size: cover;
     opacity: 0;
+    position: relative;
 }
 
 .gabriel-valeria{
     z-index: 2;
+    position: absolute;
 }
 
 .follow-us{
@@ -415,13 +417,13 @@ footer .p-iva span{
     background-attachment: fixed;
 }
 
-#cucina .img-wrapper {
+#cucina .img-wrapper, #aziende .img-wrapper {
     overflow: hidden;
     aspect-ratio: 16 / 9;
     position: relative;
 }
 
-#cucina .img-wrapper img{
+#cucina .img-wrapper img, #aziende .img-wrapper img{
     position: absolute;
     width: 100%;
     left: 50%;
@@ -430,9 +432,19 @@ footer .p-iva span{
 }
 
 @media screen and (max-width: 768px){
-    #cucina p {
+    #cucina p, #aziende p {
         text-align: center !important;
     }
 }
 
 /*====== END PAGINA CUCINA ======*/
+
+/*====== PAGINA AZIENDE ======*/
+#aziende{
+    opacity: 0;
+    background:linear-gradient(#7161545f, #716154c5  ), url("./images/aziende-bg.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*====== END PAGINA AZIENDE ======*/
