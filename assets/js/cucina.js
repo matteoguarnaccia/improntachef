@@ -24,8 +24,8 @@ let timeline2 = new TimelineMax();
 
 timeline2.fromTo(
   ".cucina-2 .img-wrapper img",
-  { y: "-10%" },
-  { y: "10%", ease: "none" }
+  { y: "0%" },
+  { y: "20%", ease: "none" }
 );
 
 let scene2 = new ScrollMagic.Scene({
@@ -41,8 +41,8 @@ let timeline3 = new TimelineMax();
 
 timeline3.fromTo(
   ".cucina-3 .img-wrapper img",
-  { y: "-10%" },
-  { y: "10%", ease: "none" }
+  { y: "0%" },
+  { y: "20%", ease: "none" }
 );
 
 let scene3 = new ScrollMagic.Scene({
@@ -58,8 +58,8 @@ let timeline4 = new TimelineMax();
 
 timeline4.fromTo(
   ".cucina-4 .img-wrapper img",
-  { y: "-10%" },
-  { y: "10%", ease: "none" }
+  { y: "0%" },
+  { y: "20%", ease: "none" }
 );
 
 let scene4 = new ScrollMagic.Scene({
