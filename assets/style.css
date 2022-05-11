@@ -440,11 +440,6 @@ footer .p-iva span{
 /*====== END PAGINA CUCINA ======*/
 
 /*====== PAGINA AZIENDE ======*/
-#aziende{
-    opacity: 0;
-    background:linear-gradient(#7161545f, #716154c5  ), url("./images/aziende-bg.jpg") center center;
-    background-size: cover;
-    background-attachment: fixed;
-}
+
 
 /*====== END PAGINA AZIENDE ======*/

@@ -5,11 +5,7 @@ let timeline1 = new TimelineMax();
 
 gsap.to("#cucina", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
-timeline1.fromTo(
-  ".cucina-1 .img-wrapper img",
-  { y: "0%" },
-  { y: "20%", ease: "none" }
-);
+timeline1.to(".cucina-1 .img-wrapper img", { y: "20%", ease: "none" });
 
 let scene1 = new ScrollMagic.Scene({
   triggerElement: ".cucina-1",
@@ -22,11 +18,7 @@ let scene1 = new ScrollMagic.Scene({
 //Cucina-2
 let timeline2 = new TimelineMax();
 
-timeline2.fromTo(
-  ".cucina-2 .img-wrapper img",
-  { y: "0%" },
-  { y: "20%", ease: "none" }
-);
+timeline2.to(".cucina-2 .img-wrapper img", { y: "20%", ease: "none" });
 
 let scene2 = new ScrollMagic.Scene({
   triggerElement: ".cucina-2 .img-wrapper",
@@ -39,11 +31,7 @@ let scene2 = new ScrollMagic.Scene({
 //Cucina-3
 let timeline3 = new TimelineMax();
 
-timeline3.fromTo(
-  ".cucina-3 .img-wrapper img",
-  { y: "0%" },
-  { y: "20%", ease: "none" }
-);
+timeline3.to(".cucina-3 .img-wrapper img", { y: "20%", ease: "none" });
 
 let scene3 = new ScrollMagic.Scene({
   triggerElement: ".cucina-3 .img-wrapper",
@@ -56,11 +44,7 @@ let scene3 = new ScrollMagic.Scene({
 //Cucina-4
 let timeline4 = new TimelineMax();
 
-timeline4.fromTo(
-  ".cucina-4 .img-wrapper img",
-  { y: "0%" },
-  { y: "20%", ease: "none" }
-);
+timeline4.to(".cucina-4 .img-wrapper img", { y: "20%", ease: "none" });
 
 let scene4 = new ScrollMagic.Scene({
   triggerElement: ".cucina-4 .img-wrapper",
