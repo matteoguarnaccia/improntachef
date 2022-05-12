@@ -1,55 +1,55 @@
-//Cucina-1
-
-let controller = new ScrollMagic.Controller();
-let timeline1 = new TimelineMax();
+gsap.registerPlugin(ScrollTrigger);
 
 gsap.to("#cucina", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
-timeline1.to(".cucina-1 .img-wrapper img", { y: "20%", ease: "none" });
+//Cucina-1
 
-let scene1 = new ScrollMagic.Scene({
-  triggerElement: ".cucina-1",
-  duration: "200%",
-  triggerHook: 1,
-})
-  .setTween(timeline1)
-  .addTo(controller);
+let tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".cucina-1",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
+tl1.to(".cucina-1 .img-wrapper img", { y: "20%", ease: "none" });
 
 //Cucina-2
-let timeline2 = new TimelineMax();
 
-timeline2.to(".cucina-2 .img-wrapper img", { y: "20%", ease: "none" });
+let tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".cucina-2",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 
-let scene2 = new ScrollMagic.Scene({
-  triggerElement: ".cucina-2 .img-wrapper",
-  duration: "200%",
-  triggerHook: 1,
-})
-  .setTween(timeline2)
-  .addTo(controller);
+tl2.to(".cucina-2 .img-wrapper img", { y: "20%", ease: "none" });
 
 //Cucina-3
-let timeline3 = new TimelineMax();
 
-timeline3.to(".cucina-3 .img-wrapper img", { y: "20%", ease: "none" });
+let tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".cucina-3",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 
-let scene3 = new ScrollMagic.Scene({
-  triggerElement: ".cucina-3 .img-wrapper",
-  duration: "200%",
-  triggerHook: 1,
-})
-  .setTween(timeline3)
-  .addTo(controller);
+tl3.to(".cucina-3 .img-wrapper img", { y: "20%", ease: "none" });
 
 //Cucina-4
-let timeline4 = new TimelineMax();
 
-timeline4.to(".cucina-4 .img-wrapper img", { y: "20%", ease: "none" });
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".cucina-4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 
-let scene4 = new ScrollMagic.Scene({
-  triggerElement: ".cucina-4 .img-wrapper",
-  duration: "200%",
-  triggerHook: 1,
-})
-  .setTween(timeline4)
-  .addTo(controller);
+tl4.to(".cucina-4 .img-wrapper img", { y: "20%", ease: "none" });
