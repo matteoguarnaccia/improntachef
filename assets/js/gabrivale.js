@@ -7,7 +7,7 @@ tl = gsap.timeline({
     trigger: ".about-us",
     start: "center center",
     end: "+=3000",
-    scrub: 1,
+    scrub: true,
     pin: true,
   },
 });
