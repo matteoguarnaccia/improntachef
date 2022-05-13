@@ -12,7 +12,7 @@ let tl1 = gsap.timeline({
   },
 });
 
-tl1.to(".az-1 p", { y: 300, ease: "none" }, "<");
+tl1.to(".az-1", { backgroundPositionY: "-100%", ease: "none" });
 
 //az-2
 let tl2 = gsap.timeline({
@@ -24,7 +24,11 @@ let tl2 = gsap.timeline({
   },
 });
 
-tl2.fromTo(".az-2 p", { y: -300 }, { y: 300, ease: "none" }, "<");
+tl2.fromTo(
+  ".az-2",
+  { backgroundPositionY: "-100%" },
+  { backgroundPositionY: "100%", ease: "none" }
+);
 
 //az-3
 
@@ -37,7 +41,11 @@ let tl3 = gsap.timeline({
   },
 });
 
-tl3.fromTo(".az-3 p", { y: -300 }, { y: 300, ease: "none" }, "<");
+tl3.fromTo(
+  ".az-3",
+  { backgroundPositionY: "100%" },
+  { backgroundPositionY: "-100%", ease: "none" }
+);
 
 //az-4
 
@@ -50,7 +58,11 @@ let tl4 = gsap.timeline({
   },
 });
 
-tl4.fromTo(".az-4 p", { y: -300 }, { y: 300, ease: "none" }, "<");
+tl4.fromTo(
+  ".az-4",
+  { backgroundPositionY: "-100%" },
+  { backgroundPositionY: "100%", ease: "none" }
+);
 
 //az-5
 
@@ -63,4 +75,8 @@ let tl5 = gsap.timeline({
   },
 });
 
-tl5.fromTo(".az-5 p", { y: -300 }, { y: 300, ease: "none" }, "<");
+tl5.fromTo(
+  ".az-5",
+  { backgroundPositionY: "100%" },
+  { backgroundPositionY: "-100%", ease: "none" }
+);

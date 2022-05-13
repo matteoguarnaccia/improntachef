@@ -468,7 +468,6 @@ footer .p-iva span{
 .az-1{
     background: url("./images/az-1-bg.jpg") center center;
     background-size: cover;
-    background-attachment: fixed;
 }
 .az-2{
     background: url("./images/az-2-bg.jpg") center center;
@@ -478,7 +477,6 @@ footer .p-iva span{
 .az-3{
     background: url("./images/az-3-bg.jpg") center center;
     background-size: cover;
-    background-attachment: fixed;
 }
 .az-4{
     background: url("./images/az-4-bg.jpg") center center;
@@ -488,7 +486,11 @@ footer .p-iva span{
 .az-5{
     background: url("./images/az-5-bg.jpg") center center;
     background-size: cover;
-    background-attachment: fixed;
+}
+@media (max-aspect-ratio: 1/1) {
+    .azienda {
+        background-size: auto 150%;
+    }
 }
 
 
