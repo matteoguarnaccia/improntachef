@@ -1,79 +1,84 @@
-//Section 1
-let controller = new ScrollMagic.Controller();
-let timeline1 = new TimelineMax();
+gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(
-  ".section-1",
-  { ease: Power1.easeIn, opacity: 1, duration: 1.5 },
-  "0.5"
-);
+gsap.to(".section-1", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
-timeline1.to(".section-1 img", { y: -80, ease: "none" });
+//Section-1
 
-let scene1 = new ScrollMagic.Scene({
-  triggerElement: ".section-1",
-  duration: "100%",
-  triggerHook: 0,
-})
-  .setTween(timeline1)
-  .addTo(controller);
+let tl1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section-1",
+    start: "center center",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+
+tl1.to(".section-1 img", { y: -80, ease: "none" });
 
 //Section 2
-let timeline2 = new TimelineMax();
 
-timeline2
-  .fromTo(".slogan", { y: 80 }, { y: -80, duration: 3, ease: "none" })
-  .fromTo(".slogan h2", { opacity: 0 }, { opacity: 1, duration: 1.5 }, "-=3")
-  .fromTo(".slogan p", { opacity: 0 }, { opacity: 1, duration: 1.5 }, "-=2.5");
+let tl2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section-2",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 
-let scene2 = new ScrollMagic.Scene({
-  triggerElement: ".section-2",
-  duration: "200%",
-  triggerHook: 0.8,
-})
-  .setTween(timeline2)
-  .addTo(controller);
+tl2
+  .to(".slogan h2", {
+    opacity: 1,
+    duration: 1,
+    delay: 0.5,
+    ease: Power1.easeIn,
+  })
+  .to(".slogan p", { opacity: 1, duration: 1, ease: Power1.easeIn }, "-=0.5")
+  .fromTo(".slogan", { y: 80 }, { y: -80, ease: "none", duration: 4 }, "-=2");
 
 //Section 3
-let timeline3 = new TimelineMax();
 
-timeline3
+let tl3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section-3",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
+tl3
   .fromTo(".gv", { y: 80 }, { y: -80, duration: 3, ease: "none" })
   .fromTo("#vale", { y: 120 }, { y: -20, duration: 3 }, "<")
   .fromTo("#gabri", { y: 50 }, { y: -20, duration: 3 }, "<");
 
-let scene3 = new ScrollMagic.Scene({
-  triggerElement: ".section-3",
-  duration: "200%",
-  triggerHook: 0.8,
-})
-  .setTween(timeline3)
-  .addTo(controller);
-
 //section 4
 
-let timeline4 = new TimelineMax();
+let tl4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section-4",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 
-timeline4.fromTo(".servizi", { y: 80 }, { y: -80, duration: 3, ease: "none" });
-
-let scene4 = new ScrollMagic.Scene({
-  triggerElement: ".section-4",
-  duration: "200%",
-  triggerHook: 0.8,
-})
-  .setTween(timeline4)
-  .addTo(controller);
+tl4.fromTo(".servizi", { y: 80 }, { y: -80, ease: "none" });
 
 //section 5
 
-let timeline5 = new TimelineMax();
+let tl5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".section-5",
+    start: "top bottom",
+    end: "bottom top",
+    scrub: true,
+  },
+});
 
-timeline5.fromTo(".clienti", { y: 80 }, { y: -80, duration: 3, ease: "none" });
+tl5.fromTo(".clienti", { y: 80 }, { y: -80, duration: 3, ease: "none" });
 
-let scene5 = new ScrollMagic.Scene({
-  triggerElement: ".section-5",
-  duration: "200%",
-  triggerHook: 0.8,
-})
-  .setTween(timeline5)
-  .addTo(controller);
+gsap.from(".section-5 .logo img", {
+  y: "100%",
+  stagger: 0.2,
+  scrollTrigger: ".clienti",
+});

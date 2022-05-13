@@ -211,6 +211,9 @@ ul.dropdown {
 .section-2 .slogan{
     text-align: center;
 }
+.section-2 .slogan h2, .section-2 .slogan p{
+    opacity: 0;
+}
 /*END SECTION-2*/
 
 /*SECTION-3*/
@@ -254,6 +257,7 @@ ul.dropdown {
     margin-bottom: 20px;
     transition: 0.3s;
 }
+
 .section-4 a:hover i{
     transform: translateY(-10px);
     color: #d5a176;
@@ -283,6 +287,7 @@ ul.dropdown {
     cursor: pointer;
     filter: grayscale(100%);
     transition: 0.3s;
+    overflow: hidden;
 }
 .section-5 .logo:hover{
     filter: grayscale(0%);
@@ -360,11 +365,16 @@ footer .p-iva span{
     background-size: cover;
     opacity: 0;
     position: relative;
+    overflow: hidden;
 }
 
 .gabriel-valeria{
     z-index: 2;
     position: absolute;
+}
+
+.gabriel-valeria footer{
+    background-color: #716154;
 }
 
 .follow-us{
@@ -447,7 +457,6 @@ footer .p-iva span{
 /*====== PAGINA CONTATTI ======*/
 #contatti{
     min-height: 100vh;
-    opacity: 0;
 }
 
 /*====== END PAGINA CONTATTI ======*/
