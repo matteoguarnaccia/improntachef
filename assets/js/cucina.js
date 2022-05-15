@@ -13,7 +13,7 @@ let tl1 = gsap.timeline({
   },
 });
 
-tl1.to(".cucina-1 .img-wrapper img", { y: "20%", ease: "none" });
+tl1.to(".cucina-1 .cc-1", { backgroundPositionY: "20%", ease: "none" });
 
 //Cucina-2
 
@@ -26,7 +26,7 @@ let tl2 = gsap.timeline({
   },
 });
 
-tl2.to(".cucina-2 .img-wrapper img", { y: "20%", ease: "none" });
+tl2.to(".cucina-2 .cc-2", { backgroundPositionY: "20%", ease: "none" });
 
 //Cucina-3
 
@@ -39,7 +39,7 @@ let tl3 = gsap.timeline({
   },
 });
 
-tl3.to(".cucina-3 .img-wrapper img", { y: "20%", ease: "none" });
+tl3.to(".cucina-3 .cc-3", { backgroundPositionY: "20%", ease: "none" });
 
 //Cucina-4
 
@@ -52,4 +52,4 @@ let tl4 = gsap.timeline({
   },
 });
 
-tl4.to(".cucina-4 .img-wrapper img", { y: "20%", ease: "none" });
+tl4.to(".cucina-4 .cc-4", { backgroundPositionY: "20%", ease: "none" });

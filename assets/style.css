@@ -423,18 +423,28 @@ footer .p-iva span{
     background-attachment: fixed;
 }
 
-#cucina .img-wrapper, #aziende .img-wrapper {
-    overflow: hidden;
+#cucina .cc{
     aspect-ratio: 16 / 9;
-    position: relative;
 }
 
-#cucina .img-wrapper img, #aziende .img-wrapper img{
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+.cc-1{
+    background: url("./images/cucina-1.jpg") center center;
+    background-size: cover;
+}
+
+.cc-2{
+    background: url("./images/cucina-2.jpg") center center;
+    background-size: cover;
+}
+
+.cc-3{
+    background: url("./images/cucina-3.jpg") center center;
+    background-size: cover;
+}
+
+.cc-4{
+    background: url("./images/cucina-4.jpg") center center;
+    background-size: cover;
 }
 
 @media screen and (max-width: 768px){
@@ -446,22 +456,22 @@ footer .p-iva span{
 /*====== END PAGINA CUCINA ======*/
 
 /*====== PAGINA AZIENDE ======*/
-#aziende {
+#aziende, #privati {
     min-height: 100vh;
     opacity: 0;
 }
 
-#aziende .img-wrapper {
+#aziende .img-wrapper, #privati .img-wrapper {
     overflow: hidden;
     aspect-ratio: 3 / 4;
     max-height: 80vh;
 }
 
-.azienda {
+.azienda, .privato {
     min-height: 100vh;
 }
 
-.azienda p {
+.azienda p, .privato p {
     font-size: 20px;
 }
 
@@ -495,6 +505,32 @@ footer .p-iva span{
 
 
 /*====== END PAGINA AZIENDE ======*/
+
+/*====== PAGINA PRIVATI ======*/
+
+.pv-1{
+    background: url("./images/pv-1-bg.jpg") center center;
+    background-size: cover;
+}
+
+.pv-2{
+    background: url("./images/pv-2-bg.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.pv-3{
+    background: url("./images/pv-3-bg.jpg") center center;
+    background-size: cover;
+}
+
+@media (max-aspect-ratio: 1/1) {
+    .privato {
+        background-size: auto 150%;
+    }
+}
+
+/*====== END PAGINA PRIVATI ======*/
 
 /*====== PAGINA CONTATTI ======*/
 #contatti{
