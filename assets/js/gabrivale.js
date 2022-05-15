@@ -1,10 +1,10 @@
 gsap.registerPlugin(ScrollTrigger);
 
-gsap.to(".about-us", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
+gsap.to("#about-us", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
 tl = gsap.timeline({
   scrollTrigger: {
-    trigger: ".about-us",
+    trigger: "#about-us",
     start: "center center",
     end: "+=3000",
     scrub: true,
