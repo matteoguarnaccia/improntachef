@@ -39,6 +39,16 @@ p{
     line-height: 30px;
 }
 
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+
 .wrapper{
     position: relative;
     overflow-x: hidden;
@@ -86,13 +96,13 @@ p{
     top: 0;
 }
 .fixed-logo{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 99;
-    width: 80px;
-    margin-top: 10px;
+    width: 100px;
+    margin-top: 30px;
 }
 
 ul.dropdown {
@@ -301,9 +311,16 @@ ul.dropdown {
     filter: grayscale(100%);
     transition: 0.3s;
     overflow: hidden;
+    max-height: 174px;
 }
 .section-5 .logo:hover{
     filter: grayscale(0%);
+}
+
+.swiper-wrapper {
+    -webkit-transition-timing-function:linear!important; 
+    -o-transition-timing-function:linear!important;
+    transition-timing-function:linear!important; 
 }
 /*END SECTION-5*/
 
@@ -384,6 +401,7 @@ footer .p-iva span{
 .gabriel-valeria{
     z-index: 2;
     position: absolute;
+    margin-top: 50px;
 }
 
 .follow-us{
@@ -434,6 +452,7 @@ footer .p-iva span{
     background:linear-gradient(#7161545f, #716154c5), url("./images/cucina-bg.jpg") center center;
     background-size: cover;
     background-attachment: fixed;
+    padding-top: 130px;
 }
 
 #cucina .cc{
@@ -549,6 +568,7 @@ footer .p-iva span{
 /*====== PAGINA CONTATTI ======*/
 #contatti{
     min-height: 100vh;
+    padding-top: 130px;
 }
 
 /*====== END PAGINA CONTATTI ======*/

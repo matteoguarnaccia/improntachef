@@ -77,8 +77,25 @@ let tl5 = gsap.timeline({
 
 tl5.fromTo(".clienti", { y: 80 }, { y: -80, duration: 3, ease: "none" });
 
-gsap.from(".section-5 .logo img", {
-  y: "100%",
-  stagger: 0.2,
-  scrollTrigger: ".clienti",
+const swiper = new Swiper(".mySwiper", {
+  freeMode: {
+    enabled: true,
+    momentum: false,
+  },
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  speed: 6000,
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: false,
+  },
+  breakpoints: {
+    992: {
+      slidesPerView: 5,
+    },
+    768: {
+      slidesPerView: 4,
+    },
+  },
 });
