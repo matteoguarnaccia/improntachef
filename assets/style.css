@@ -92,8 +92,7 @@ p{
 }
 
 .home-logo{
-    position: absolute;
-    top: 0;
+    margin-bottom: 20px;
 }
 .fixed-logo{
     position: absolute;
@@ -108,7 +107,7 @@ p{
 ul.dropdown {
     font-size: 12px;
     padding: 0;
-    height: 0px;
+    height: 0;
     overflow: hidden;
     transition: 0.3s;
 }
