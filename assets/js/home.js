@@ -62,7 +62,7 @@ let tl4 = gsap.timeline({
   },
 });
 
-tl4.fromTo(".servizi", { y: 80 }, { y: -80, ease: "none" });
+tl4.fromTo(".section-4", { y: 80 }, { y: -80, ease: "none" });
 
 //section 5
 

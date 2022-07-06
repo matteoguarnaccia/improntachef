@@ -129,7 +129,7 @@ ul.dropdown {
 }
 
 #dd-parent.active ul.dropdown {
-    height: 100px;
+    height: 150px;
 }
 
 #dd-parent.active a span{
@@ -199,7 +199,7 @@ ul.dropdown {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-1-bg.jpg") center center;
+    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-1-bg.webp") center center;
     opacity: 0;
 }
 .section-1::after{
@@ -219,7 +219,6 @@ ul.dropdown {
 }
 
 .section-1 img{
-    max-height: 120vh;
 }
 /*END SECTION-1*/
 
@@ -243,7 +242,7 @@ ul.dropdown {
 .section-3{
     min-height: 100vh;
     position: relative;
-    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-3-bg.jpg") center center;
+    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-3-bg.webp") center center;
 }
 
 .section-3::before{
@@ -291,7 +290,7 @@ ul.dropdown {
 .section-5{
     min-height: 100vh;
     position: relative;
-    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-5-bg.jpg") center center;
+    background: radial-gradient(rgba(0,0,0,0), #716154), url("./images/section-5-bg.webp") center center;
     overflow: hidden;
 }
 
@@ -377,7 +376,7 @@ footer .p-iva span{
 }
 
 @media screen and (max-width: 768px){
-    footer .info {
+    footer .copyright {
         order: -1;
     }
     footer .p-iva {
