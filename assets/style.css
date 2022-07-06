@@ -92,8 +92,13 @@ p{
 }
 
 .home-logo{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
+
+.home-logo img{
+    width: 40%;
+}
+
 .fixed-logo{
     position: absolute;
     top: 0;
