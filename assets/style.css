@@ -215,15 +215,6 @@ ul.dropdown {
     height: 100px;
     background: linear-gradient(to top, #716154, transparent);
 }
-
-.section-1 h1{
-    font-size: 10vw;
-    letter-spacing: 6px;
-    color: #d5a176;
-}
-
-.section-1 img{
-}
 /*END SECTION-1*/
 
 /*SECTION-2*/
@@ -448,7 +439,7 @@ footer .p-iva span{
 /*====== PAGINA CUCINA ======*/
 #cucina{
     opacity: 0;
-    background:linear-gradient(#7161545f, #716154c5), url("./images/cucina-bg.jpg") center center;
+    background:linear-gradient(#7161545f, #716154c5), url("./images/cucina-bg.webp") center center;
     background-size: cover;
     background-attachment: fixed;
     padding-top: 130px;
@@ -571,3 +562,11 @@ footer .p-iva span{
 }
 
 /*====== END PAGINA CONTATTI ======*/
+
+/*====== COME FUNZIONA ======*/
+#come-funziona{
+    opacity: 0;
+    background: rgb(213,161,118);
+    background: linear-gradient(65deg, rgba(213,161,118,1) 0%, rgba(113,97,84,1) 50%, rgba(82,71,62,1) 100%);
+}
+/*====== END COME FUNZIONA ======*/
