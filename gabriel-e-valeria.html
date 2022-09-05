@@ -1,119 +1,267 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
     <title>Gabriel e Valeria | Impronta chef</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./assets/style.css">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="fixed-logo"><a href="./index.html"><img src="./assets/images/IMPRONTA-bianco-small.webp" alt="logo Impronta" class="img-fluid"></a></div>
-        <div id="toggle"></div>
-        <nav class="navbar d-flex align-items-start">
-            <ul>
-                <li class="home-logo"><a href="/"><img src="./assets/images/IMPRONTA-bianco-small.webp" alt="Impronta-chef"></a></li>
-                <li><a href="./gabriel-e-valeria.html">Gabriel e Valeria</a></li>
-                <li><a href="./cucina.html">La nostra cucina</a></li>
-                <li id="dd-parent">
-                    <a>Servizi <span><i class="bi bi-chevron-down"></i></span></a>
-                    <ul class="dropdown">
-                        <li><a href="./aziende.html">Se sei un'azienda</a></li>
-                        <li><a href="./privati.html">Se sei un privato</a></li>
-                        <li><a href="./come-funziona.html">Come funziona</a></li>
-                    </ul>
-                </li>
-                <li><a href="./contatti.html">Contatti</a></li>
+      <div class="fixed-logo">
+        <a href="./index.html"
+          ><img
+            src="./assets/images/IMPRONTA-bianco-small.webp"
+            alt="logo Impronta"
+            class="img-fluid"
+        /></a>
+      </div>
+      <div id="toggle"></div>
+      <nav class="navbar d-flex align-items-start">
+        <ul>
+          <li class="home-logo">
+            <a href="/"
+              ><img
+                src="./assets/images/IMPRONTA-bianco-small.webp"
+                alt="Impronta-chef"
+            /></a>
+          </li>
+          <li><a href="./gabriel-e-valeria.html">Gabriel e Valeria</a></li>
+          <li><a href="./cucina.html">La nostra cucina</a></li>
+          <li id="dd-parent">
+            <a
+              >Servizi <span><i class="bi bi-chevron-down"></i></span
+            ></a>
+            <ul class="dropdown">
+              <li><a href="./aziende.html">Se sei un'azienda</a></li>
+              <li><a href="./privati.html">Se sei un privato</a></li>
+              <li><a href="./come-funziona.html">Come funziona</a></li>
             </ul>
-        </nav>
-        <main id="about-us" class="d-flex flex-column align-items-center">
-                <div class="gabriel-valeria">
-                    <section class="gabri row d-flex justify-content-center align-items-center my-4">
-                        <div class="img-wrapper col-xl-3 col-md-4 col-7 m-4">
-                            <img src="./assets/images/foto-gabri.webp" alt="Gabriel" class="img-fluid">
-                        </div>
-                        <div class="descrizione col-xl-4 col-md-6 col-10">
-                            <p>Gabriel nasce in provincia di Milano nel 1993 e si diploma come Grafico Pubblicitario. La grande curiosità verso la cucina e il desiderio di poter esprimere la propria creatività lo spingono a proseguire il gli studi con ALMA, la Scuola Internazionale di Cucina di Gualtiero
-                                Marchesi. È durante il percorso scolastico che lavora all'Ilario Vinciguerra Restaurant e al JK Place, hotel 5 stelle lusso a Capri.
-                                Nel 2017, diplomato, è da Lume di Chef Luigi Taglienti e poi nella cucina di Essenza, Chef Eugenio Boer, e conosce Valeria.</p>
-                        </div>
-                    </section>
-                    <section class="vale row d-flex justify-content-center align-items-center my-4">
-                        <div class="descrizione col-xl-4 col-md-6 col-10">
-                            <p>Valeria nasce a Milano nel 1996 e si diploma al Liceo Scientifico. Appassionata di matematica e filosofia, decide tuttavia di seguire il suo grande amore per il cibo e si diploma alla Food Genius Academy di Milano. Successivamente alterna stage e collaborazioni con Chef Eugenio Boer a
-                                periodi di lavoro presso alcune realtà milanesi, tra cui I Chiostri di Andrea, Chef Andrea Alfieri. 
-                                Nel 2017 è definitivamente parte della brigata di Essenza e conosce Gabriel.</p>
-                        </div>
-                        <div class="img-wrapper col-xl-3 col-md-4 col-7 m-4">
-                            <img src="./assets/images/foto-vale.webp" alt="Valeria" class="img-fluid">
-                        </div>
-                    </section>
-                    <section>
-                        <div class="row d-flex justify-content-center align-items-center mt-5">
-                            <p class="col-xl-6 col-md-8 col-11 text-center">Nel 2017 decidiamo di unire i nostri percorsi di vita.</p>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center mt-5">
-                            <p class="col-xl-6 col-md-8 col-11 text-center">Negli anni che seguono lavoriamo in diverse realtà in tutta Italia: Dattilo, Chef Caterina Ceraudo; Bür, Chef Eugenio Boer; Materia, Chef Davide Caranchini; case private in Italia e in Svizzera, per brevi e lunghi periodi, approfondendo non solo il lavoro di cucina, ma anche la parte di servizio di sala, racconto dei piatti e cura del cliente.</p>
-                        </div>
-                        <div class="row d-flex justify-content-center align-items-center mt-5">
-                            <p class="col-xl-6 col-md-8 col-11 text-center">Da che abbiamo memoria, abbiamo sempre voluto fare i cuochi e siamo sempre stati curiosi, sperimentatori e creativi.
-                                Nel 2021 è nata in noi l’esigenza di esprimerci con più dinamicità e mettere al servizio del cliente la nostra esperienza maturata negli anni.
-                                Così è nato Impronta: il nostro progetto, il nostro brand, i nostri servizi per le <a href="/aziende.html" style="color: #d5a176">aziende</a> e per i <a href="/privati.html" style="color: #d5a176;">privati</a>.</p>
-                        </div>
-                    </section>
-                    <section class="follow-us my-5 py-5">
-                        <div class="row d-flex justify-content-center align-items-center">
-                            <h1 class="col-xl-6 col-md-8 col-11 text-center">Trovi i nostri piatti e i nostri ingredienti preferiti qui</h1>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center my-5">
-                            <a href="https://www.instagram.com/impronta.chefs/" target="_blank"><i class="bi bi-instagram"></i></a>
-                            <a href="https://www.facebook.com/impronta.chefs" target="_blank"><i class="bi bi-facebook"></i></a>
-                        </div>
-                    </section>
-                </div>
-                <!-- <div class="parallax px1">
+          </li>
+          <li><a href="./contatti.html">Contatti</a></li>
+        </ul>
+      </nav>
+      <main id="about-us" class="d-flex flex-column align-items-center">
+        <div class="gabriel-valeria">
+          <section
+            class="gabri row d-flex justify-content-center align-items-center my-4"
+          >
+            <div class="img-wrapper col-xl-3 col-md-4 col-7 m-4">
+              <img
+                src="./assets/images/foto-gabri.webp"
+                alt="Gabriel"
+                class="img-fluid"
+              />
+            </div>
+            <div class="descrizione col-xl-4 col-md-6 col-10">
+              <p>
+                Gabriel nasce in provincia di Milano nel 1993 e si diploma come
+                Grafico Pubblicitario. La grande curiosità verso la cucina e il
+                desiderio di poter esprimere la propria creatività lo spingono a
+                proseguire il gli studi con ALMA, la Scuola Internazionale di
+                Cucina di Gualtiero Marchesi. Durante il percorso scolastico
+                lavora da Ilario Vinciguerra e al JK Place, con Chef Eduardo
+                Estatico. Nel 2017, diplomato, è da Lume di Chef Luigi
+                Taglienti, stella Michelin, e poi nella cucina di Essenza, Chef
+                Eugenio Boer, e conosce Valeria.
+              </p>
+            </div>
+          </section>
+          <section
+            class="vale row d-flex justify-content-center align-items-center my-4"
+          >
+            <div class="descrizione col-xl-4 col-md-6 col-10">
+              <p>
+                Valeria nasce a Milano nel 1996 e si diploma al Liceo
+                Scientifico. Appassionata di matematica e filosofia, decide
+                tuttavia di seguire il suo grande amore per il cibo e si diploma
+                alla Food Genius Academy di Milano. Successivamente alterna
+                stage e collaborazioni con Chef Eugenio Boer a periodi di lavoro
+                presso alcune realtà milanesi, tra cui I Chiostri di Andrea,
+                Chef Andrea Alfieri. Nel 2017 è definitivamente parte della
+                brigata di Essenza e conosce Gabriel.
+              </p>
+            </div>
+            <div class="img-wrapper col-xl-3 col-md-4 col-7 m-4">
+              <img
+                src="./assets/images/foto-vale.webp"
+                alt="Valeria"
+                class="img-fluid"
+              />
+            </div>
+          </section>
+          <section>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5"
+            >
+              <p class="col-xl-6 col-md-8 col-11 text-center">
+                Nel 2017 decidiamo di unire i nostri percorsi di vita.
+              </p>
+            </div>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5"
+            >
+              <p class="col-xl-6 col-md-8 col-11 text-center">
+                Negli anni che seguono lavoriamo in diverse realtà in tutta
+                Italia: Dattilo, Chef Caterina Ceraudo; Bür, Chef Eugenio Boer;
+                Materia, Chef Davide Caranchini; case private in Italia e in
+                Svizzera, per brevi e lunghi periodi, approfondendo non solo il
+                lavoro di cucina, ma anche la parte di servizio di sala,
+                racconto dei piatti e cura del cliente.
+              </p>
+            </div>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5"
+            >
+              <p class="col-xl-6 col-md-8 col-11 text-center">
+                Da che abbiamo memoria, abbiamo sempre voluto fare i cuochi e
+                siamo sempre stati curiosi, sperimentatori e creativi. Siamo
+                sempre stati mossi dall’amore per la cucina, la divisa, il
+                mestiere del cuoco. Abbiamo lavorato con impegno e passione nei
+                ristoranti, finché ci siamo sentiti sereni, contenti e
+                soddisfatti. E poi, insieme, abbiamo sentito il bisogno di
+                approfondire la nostra cucina, il servizio al tavolo, il
+                rapporto diretto con il cliente, e ci siamo spostati nelle case
+                private. Nel 2021 è nata in noi l’esigenza di esprimerci con più
+                dinamicità e mettere al servizio del cliente la nostra
+                esperienza maturata negli anni.
+              </p>
+            </div>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5"
+            >
+              <p class="col-xl-6 col-md-8 col-11 text-center">
+                Abbiamo messo un punto a tutto ciò che è successo, e siamo
+                andati a capo.
+              </p>
+            </div>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5"
+            >
+              <p class="col-xl-6 col-md-8 col-11 text-center">
+                Abbiamo definito un’identità, abbiamo consolidato i nostri
+                piatti, abbiamo messo in atto un ripensamento concettuale del
+                nostro mestiere attraverso l’offerta di una serie di servizi, in
+                continua evoluzione.
+              </p>
+            </div>
+            <div
+              class="row d-flex justify-content-center align-items-center mt-5"
+            >
+              <p class="col-xl-6 col-md-8 col-11 text-center">
+                Così è nato Impronta: il nostro progetto, il nostro brand, i
+                nostri servizi per le
+                <a href="./aziende.html" class="link">aziende</a> e per i
+                <a href="./privati.html" class="link">privati</a>.
+              </p>
+            </div>
+          </section>
+          <section class="follow-us my-5 py-5">
+            <div class="row d-flex justify-content-center align-items-center">
+              <h1 class="col-xl-6 col-md-8 col-11 text-center">
+                Trovi i nostri piatti e i nostri ingredienti preferiti qui
+              </h1>
+            </div>
+            <div class="d-flex justify-content-center align-items-center my-5">
+              <a
+                href="https://www.instagram.com/impronta.chefs/"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/impronta.chefs" target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+            </div>
+          </section>
+        </div>
+        <!-- <div class="parallax px1">
                 </div>
                 <div class="parallax px2">
                 </div>
                 <div class="parallax px3">
                 </div> -->
-        </main>
-        <footer>
-            <div class="footer-1 row d-flex justify-content-center py-5">
-                
-                <div class="info col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center my-3">
-                    <img src="./assets/images/IMPRONTA-bianco-small.webp" alt="impronta" class="mb-3">
-                    <div class="social">
-                        <a href="https://www.instagram.com/impronta.chefs/" target="_blank"><i class="bi bi-instagram"></i></a>
-                        <a href="https://www.facebook.com/impronta.chefs" target="_blank"><i class="bi bi-facebook"></i></a>
-                        <a href="https://it.linkedin.com/company/improntachefs?trk=public_profile_topcard-current-company" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                    <div class="contacts col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center justify-content-center my-3">
-                        <a href="tel:+393519591655"><i class="bi bi-whatsapp"></i><span> +39 351 959 1655</span></a>
-                        <a href="mailto:info@improntachefs.com"><i class="bi bi-envelope"></i><span> info@improntachefs.com</span></a>
-                    </div>
-                </div>
-                
+      </main>
+      <footer>
+        <div class="footer-1 row d-flex justify-content-center py-4">
+          <div
+            class="info col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center my-1"
+          >
+            <img
+              src="./assets/images/IMPRONTA-bianco-small.webp"
+              alt="impronta"
+              class="mb-3"
+            />
+            <div class="social">
+              <a
+                href="https://www.instagram.com/impronta.chefs/"
+                target="_blank"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/impronta.chefs" target="_blank"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://it.linkedin.com/company/improntachefs?trk=public_profile_topcard-current-company"
+                target="_blank"
+                ><i class="bi bi-linkedin"></i
+              ></a>
             </div>
-            <div class="row d-flex align-items-center justify-content-center">
-                <div class="p-iva col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center justify-content-center" style="font-size: 14px;">
-                    <span>Impronta di Gabriel Cinque P.IVA 12259780968</span>
-                </div>
-                <p class="copyright text-center col-xl-3 col-md-4 col-8 my-2" style="font-size: 14px;">&copy;<script>document.write(new Date().getFullYear());</script> | Impronta</p>
-                <div class="p-iva col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center justify-content-center" style="font-size: 14px;">
-                    <span>Impronta di Valeria Loi P.IVA 12260570960</span>
-                </div>
+            <div
+              class="contacts col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center justify-content-center my-3"
+            >
+              <a href="https://wa.me/3519591655"
+                ><i class="bi bi-whatsapp"></i><span> +39 351 959 1655</span></a
+              >
+              <a href="mailto:info@improntachefs.com"
+                ><i class="bi bi-envelope"></i
+                ><span> info@improntachefs.com</span></a
+              >
             </div>
-        </footer>
-        
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-        <script src="./assets/js/script.js"></script>
-        <script src="./assets/js/gabrivale.js"></script>
-    </div>   
-</body>
+          </div>
+        </div>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div
+            class="p-iva col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center justify-content-center"
+            style="font-size: 14px"
+          >
+            <span>Impronta di Gabriel Cinque P.IVA 12259780968</span>
+          </div>
+          <p
+            class="copyright text-center col-xl-3 col-md-4 col-8 my-2"
+            style="font-size: 14px"
+          >
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            | Impronta
+          </p>
+          <div
+            class="p-iva col-xl-3 col-md-4 col-8 d-flex flex-column align-items-center justify-content-center"
+            style="font-size: 14px"
+          >
+            <span>Impronta di Valeria Loi P.IVA 12260570960</span>
+          </div>
+        </div>
+      </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/gabrivale.js"></script>
+    </div>
+  </body>
 </html>

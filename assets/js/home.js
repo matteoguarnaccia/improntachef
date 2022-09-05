@@ -33,8 +33,7 @@ tl2
     delay: 0.5,
     ease: Power1.easeIn,
   })
-  .to(".slogan p", { opacity: 1, duration: 1, ease: Power1.easeIn }, "-=0.5")
-  .fromTo(".slogan", { y: 80 }, { y: -80, ease: "none", duration: 4 }, "-=2");
+  .fromTo(".slogan", { y: 0 }, { y: -80, ease: "none", duration: 4 }, "-=2");
 
 //Section 3
 
