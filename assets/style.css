@@ -214,7 +214,10 @@ ul.dropdown {
   justify-content: center;
   align-items: center;
   background: radial-gradient(rgba(0, 0, 0, 0), #716154),
-    url("./images/section-1-bg.webp") center center;
+    url("./images/section-1-\(2\).jpg");
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: center;
   opacity: 0;
 }
 .section-1::after {
@@ -255,7 +258,8 @@ ul.dropdown {
   min-height: 100vh;
   position: relative;
   background: radial-gradient(rgba(0, 0, 0, 0), #716154),
-    url("./images/section-3-bg.webp") center center;
+    url("./images/section-3.jpg") center center;
+  background-size: cover;
 }
 
 .section-3::before {
@@ -304,7 +308,7 @@ ul.dropdown {
   min-height: 100vh;
   position: relative;
   background: radial-gradient(rgba(0, 0, 0, 0), #716154),
-    url("./images/section-5-bg.webp") center center;
+    url("./images/section-1-bg.webp") center center;
   overflow: hidden;
 }
 
