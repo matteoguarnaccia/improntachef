@@ -2,6 +2,16 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".section-1", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
+gsap.to(
+  ".section-2 h2",
+  {
+    ease: Power1.easeIn,
+    opacity: 1,
+    duration: 0.8,
+  },
+  "1.5"
+);
+
 //Section-1
 
 let tl1 = gsap.timeline({
@@ -26,15 +36,7 @@ let tl2 = gsap.timeline({
   },
 });
 
-tl2
-  .to(".slogan h2", {
-    opacity: 1,
-    duration: 1,
-    delay: 0.5,
-    ease: Power1.easeIn,
-  })
-  .fromTo(".slogan", { y: 0 }, { y: -80, ease: "none", duration: 4 }, "-=2");
-
+tl2.fromTo(".slogan", { y: 0 }, { y: -80, ease: "none", duration: 4 }, "-=2");
 //Section 3
 
 let tl3 = gsap.timeline({
@@ -79,7 +81,8 @@ tl5.fromTo(".clienti", { y: 80 }, { y: -80, duration: 3, ease: "none" });
 const swiper = new Swiper(".mySwiper", {
   freeMode: {
     enabled: true,
-    momentum: false,
+    momentum: true,
+    sticky: true,
   },
   slidesPerView: 3,
   spaceBetween: 30,
