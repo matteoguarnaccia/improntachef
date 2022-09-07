@@ -451,7 +451,7 @@ footer .p-iva span {
 /*====== PAGINA CUCINA ======*/
 #cucina {
   opacity: 0;
-  background: linear-gradient(#6c65585f, #6c6558c5),
+  background: linear-gradient(#6c6558a4, #6c6558e8),
     url("./images/cucina-bg.webp") center center;
   background-size: cover;
   background-attachment: fixed;
@@ -459,26 +459,28 @@ footer .p-iva span {
 }
 
 #cucina .cc {
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16/9;
 }
 
 .cc-1 {
-  background: url("./images/cucina-1.webp") center center;
+  background: url("./images/cucina-1.jpg") center center;
   background-size: cover;
+  border-radius: 2rem;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
 }
 
 .cc-2 {
-  background: url("./images/cucina-2.webp") center center;
+  background: url("./images/cucina-3.jpg") center center;
   background-size: cover;
 }
 
 .cc-3 {
-  background: url("./images/cucina-3.webp") center center;
+  background: url("./images/cucina-4.jpg") center center;
   background-size: cover;
 }
 
 .cc-4 {
-  background: url("./images/cucina-4.webp") center center;
+  background: url("./images/cucina-5.jpg") center center;
   background-size: cover;
 }
 
@@ -519,25 +521,30 @@ footer .p-iva span {
 }
 
 .az-1 {
-  background: url("./images/az-1-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/az-1-bg.webp") center center;
   background-size: cover;
   background-attachment: fixed;
 }
 .az-2 {
-  background: url("./images/az-2-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/az-2.jpg") center center;
   background-size: cover;
 }
 .az-3 {
-  background: url("./images/az-3-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/az-3-bg.webp") center center;
   background-size: cover;
   background-attachment: fixed;
 }
 .az-4 {
-  background: url("./images/az-4-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/az-4-bg.webp") center center;
   background-size: cover;
 }
 .az-5 {
-  background: url("./images/az-5-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/az-5-bg.webp") center center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -556,20 +563,29 @@ footer .p-iva span {
 }
 
 .pv-1 {
-  background: url("./images/pv-1-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/pv-1-bg.webp") center center;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .pv-2 {
-  background: url("./images/pv-2-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/pv-3-bg.webp") center center;
   background-size: cover;
 }
 
 .pv-3 {
-  background: url("./images/pv-3-bg.webp") center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/privati-3.jpg") center center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.pv-4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("./images/pv-3-bg.webp") center center;
+  background-size: cover;
 }
 
 @media (max-aspect-ratio: 1/1) {
