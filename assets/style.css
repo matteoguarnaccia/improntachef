@@ -458,30 +458,8 @@ footer .p-iva span {
   padding-top: 130px;
 }
 
-#cucina .cc {
-  aspect-ratio: 16/9;
-}
-
-.cc-1 {
-  background: url("./images/cucina-1.jpg") center center;
-  background-size: cover;
-  border-radius: 2rem;
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.5);
-}
-
-.cc-2 {
-  background: url("./images/cucina-2.jpg") center center;
-  background-size: cover;
-}
-
-.cc-3 {
-  background: url("./images/cucina-3.jpg") center center;
-  background-size: cover;
-}
-
-.cc-4 {
-  background: url("./images/cucina-4.jpg") center center;
-  background-size: cover;
+.cc img {
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
