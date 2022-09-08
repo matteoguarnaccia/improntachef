@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to(".section-1", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
 gsap.to(
-  ".section-2 h2",
+  ".section-2 h1",
   {
     ease: Power1.easeIn,
     opacity: 1,
