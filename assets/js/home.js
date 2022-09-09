@@ -2,15 +2,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".section-1", { ease: Power1.easeIn, opacity: 1, duration: 1 }, "0.5");
 
-gsap.to(
-  ".section-2 h1",
-  {
-    ease: Power1.easeIn,
-    opacity: 1,
-    duration: 0.8,
-  },
-  "1.5"
-);
+// gsap.to(
+//   ".section-2 h1",
+//   {
+//     ease: Power1.easeIn,
+//     opacity: 1,
+//     duration: 0.8,
+//   },
+//   "1.5"
+// );
 
 //Section-1
 
@@ -30,11 +30,23 @@ tl1.to(".section-1 img", { y: -80, ease: "none" });
 let tl2 = gsap.timeline({
   scrollTrigger: {
     trigger: ".section-2",
-    start: "top bottom",
+    start: "bottom bottom",
     end: "bottom top",
     scrub: true,
   },
 });
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".section-2",
+      start: "bottom bottom",
+      end: "bottom center",
+      scrub: true,
+      once: true,
+    },
+  })
+  .to(".slogan h1", { opacity: 1 });
 
 tl2.fromTo(".slogan", { y: 0 }, { y: -80, ease: "none", duration: 4 }, "-=2");
 //Section 3
